@@ -1,0 +1,151 @@
+body{
+    background-color: #ffffff;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    align-items: center;
+    margin: 5vh auto;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px #ac74f6;
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+}
+#tablediv{
+    overflow-x: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);
+}
+table{
+    border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+th,td{
+    border: 2px solid #231729;
+    padding: 5px;
+}
+
+#title{
+    margin-bottom: 0;
+}
+#description{
+    margin-top: 0;
+}
+.form-group{
+    text-align: center;
+}
+input {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 2px solid var(--input-border);
+  }
+input::placeholder{
+    font-size: 20px;
+}
+label{
+    vertical-align:middle;
+    float: left
+}
+#food{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+#food input{
+    margin-left: 20px;
+}
+#food label{
+    float: none;
+    margin-left: 5px;
+}
+#email {
+    margin-left: 45px;
+}
+#pincode{
+    margin-left: 50px;
+}
+#state{
+    margin-left: 75px;
+}
+#country{
+    margin-left: 52px;
+}
+#genderdiv{
+    margin-left: 45px;
+}
+#genderdiv input{
+    margin-left: 0;
+}
+#genderdiv label{
+    float: none;
+}
+textarea{
+   vertical-align: middle;
+   width: 240px;
+   font-family: Arial, Helvetica, sans-serif;
+   resize: none;
+   margin-bottom: 10px;
+   margin-left: 50px;
+   font-size: 20px;
+   border-radius: 10px;
+   border: 2px solid var(--input-border);
+}
+#submit{
+    color: #231729;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #1973fa;
+    border: 2px solid #1973fa;
+    margin-bottom: 10px;
+    box-shadow: 0 0 2px 2px #1973fa;
+    transition: opacity 0.15s border 0.15s ease;
+}
+#submit:hover{
+    color: #ffffff;
+    box-shadow: 0 0 2px 2px #ffffff;
+}
+#submit:active{
+    scale: 0.95;
+}
+
+
+@media (max-width:700px){
+    #container{
+        width: 355px;
+    }
+    input{
+        font-size: 1.2rem;
+        width: 150px;
+    }
+    label{
+        font-size: 1.1rem;
+        margin-left: 20px;
+    }
+    textarea{
+        font-size: 1rem;
+        width: 150px;
+    }
+    #genderdiv{
+        margin-left: auto;
+    }
+    #genderdiv input{
+        width: 20px;
+        margin-left: 0;
+    }
+    #genderdiv label{
+        float: none;
+        margin-left: 0;
+    }
+    #food input{
+        width: 20px;
+    }
+    
+   
+}

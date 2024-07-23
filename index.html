@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-FORM</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div id="container">
+        <h1 id="title">Form</h1>
+        <p id="description">using DOM Manipulation</p>
+        <form id="form">
+            <div class="form-group">
+                <div id="firstN">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="first name" vlaue = "val" required>
+                </div>
+                <div id="lastN">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="last name" required>    
+                </div>
+                <div id="eml">
+                    <label for="email">E-mail  id</label>
+                    <input type="text" id="email" name="email" placeholder="e-mail" required>    
+                </div>
+                <div id="addr">
+                    <label for="address" class="address">Address</label>
+                    <textarea name="address" id="address" rows="4" placeholder="Address" spellcheck="false" required></textarea>
+                </div>
+                <div id="pin">
+                    <label for="pincode">Pincode</label>
+                    <input type="text" name="pincode" id="pincode" placeholder="pincode" required>
+                </div>
+                <div id="st">
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="state" placeholder="state" required>
+                </div>
+                <div id="cou">
+                    <label for="country">Country</label>
+                    <input type="text" name="country" id="country" placeholder="country" required>
+                </div>
+                <label for="gender">Gender</label>
+                <div id="genderdiv" style="display: inline;margin-bottom: 10px;">
+                    <input type="radio" id="male" name="gender" value="Male" required> 
+                    <label for="male">Male</label> 
+                    <input type="radio" id="female" name="gender" value="Female" >
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="Other" >
+                    <label for="other">Other</label>
+                </div>
+                <p id="food-choice" style="font-weight: bold; margin-bottom: 0;">Choice of food (atleast 2)</p>
+                <p id="errorCheck" style="visibility: hidden; color: red; font-size: 15px; margin:auto 0;">
+                    Please select atleast 2 options
+                </p>
+                <div id="food" style="margin-bottom: 10px;">
+                    
+                    <input type="checkbox" id="pasta" name="food" value="Pasta">
+                    <label for="pasta">Pasta</label>
+                    <input type="checkbox" id="soup" name="food" value="Soup">
+                    <label for="soup">Soup</label>
+                    <input type="checkbox" id="noodles" name="food" value="Noodles">
+                    <label for="noodles">Noodles</label>
+                    <input type="checkbox" id="salad" name="food" value="Salad">
+                    <label for="salad">Salad</label>
+                    <input type="checkbox" id="curry" name="food" value="Curry">
+                    <label for="curry">Curry</label>
+                    
+                </div>
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+              
+            </div> 
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
