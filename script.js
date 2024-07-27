@@ -18,7 +18,7 @@ let heading = ["ID.No","FirstName","LastName","Email","Address","Pincode","State
 
 for(let ele in heading){
     const th = document.createElement("th")
-    th.innerText = `${heading[ele]}`
+    th.textContent = `${heading[ele]}`
     headtr.append(th)
 }
 let idNo = 0
@@ -35,7 +35,7 @@ function getData(){
         if(pair[0]!==("food"))
         {
         const td = document.createElement("td")
-        td.innerText = `${pair[1]}`
+        td.textContent = `${pair[1]}`
         bodytr.append(td)
         }
     }
@@ -47,11 +47,10 @@ function getData(){
             choice.push(ele.value)
         }
     }
-    td.innerText = `${choice.join(", ")}`
+    td.textContent = `${choice.join(", ")}`
     bodytr.append(td)
     tbody.append(bodytr)
 }
-Request.get
 function checkError(e){
     let formData = new FormData(form);
     if(formData.getAll("food").length<2){
